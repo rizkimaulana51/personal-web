@@ -105,25 +105,28 @@ nav ul li a:hover {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-   
+    padding: 5em;
+    /* background-color: #22afc2; */
 }
 
 .nav-mobile ul li {
     list-style-type: none;
     padding-top: 5em;
-    margin-left: 5em ;
-
+    background-color: #22afc2;
     width: 50%;
+    margin: auto;
 }
 .nav-mobile ul li .icon {
     font-size: 1.5em;
-    margin: 20px;
+    margin-right: 20px;
+    /* margin: 20px; */
 }
 
 .nav-mobile ul li a {
     text-decoration: none;
     font-size: 1em;
     color: #eaeaea;
+    margin-left: -10px;
 }
 
 
