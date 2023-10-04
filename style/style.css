@@ -112,8 +112,8 @@ nav ul li a:hover {
 .nav-mobile ul li {
     list-style-type: none;
     padding-top: 5em;
-    background-color: #22afc2;
-    width: 50%;
+   
+    width: 70%;
     margin: auto;
 }
 .nav-mobile ul li .icon {
