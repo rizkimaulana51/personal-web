@@ -1,0 +1,239 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "poppins", sans-serif;
+    box-sizing: border-box;
+}
+    
+.hero {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(22, 4, 28);
+    /* background-image: linear-gradient(to right, rgba(2, 3, 24,1), rgba(2, 3, 24,.9) , rgba(52, 1, 65,.8)); */
+    color: rgb(232, 235, 237);
+}
+nav {
+    position: relative;
+    width: 90%;
+    margin: auto;
+    padding: 40px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: none;
+    width: 40%;
+    justify-content: space-around;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #eaeaea;
+}
+
+nav ul li a:hover {
+    color:#22afc2
+}
+
+/* Hamburger menu */
+
+.hamburger {
+    width: 35px;
+    height: 35px;
+    background: none;
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+    border:none;
+    
+}
+
+.hamburger .bar, .hamburger:after, .hamburger:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    margin: 6px 0;
+    background-color: #eaeaea;
+    transition: .5s;
+}
+
+.hamburger .bar.active {
+    transform: translateX(10px);
+    opacity: 0;
+}
+
+.hamburger.active::before{
+    transform: rotate(45deg) translateY(20PX) translateX(-5px);
+}
+
+.hamburger.active::after{
+    transform: rotate(-45deg)translateY(-20PX) translateX(-5px);
+}
+
+/* Navigasi for mobile version */
+
+.nav-mobile {
+    position: relative;
+    overflow: hidden;
+    left: 100%;
+    width: 100%;
+    height: 100vh;
+    background-color: #311547;
+    z-index: 99;
+    transition: .5s;
+}
+
+.nav-mobile.active {
+    left: 0;
+}
+
+.nav-mobile ul {
+    width: 100%;
+    padding: 10px;
+    margin-top: -30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+}
+
+.nav-mobile ul li {
+    list-style-type: none;
+    padding-top: 5em;
+    margin-left: 5em ;
+
+    width: 50%;
+}
+.nav-mobile ul li .icon {
+    font-size: 1.5em;
+    margin: 20px;
+}
+
+.nav-mobile ul li a {
+    text-decoration: none;
+    font-size: 1em;
+    color: #eaeaea;
+}
+
+
+/* responsive */
+
+/* @media screen and (max-width:768px) {
+    nav {
+        height: 20%;
+        flex-direction: column;
+        
+    }
+    
+    nav ul {
+        width: 80%;
+    } */
+
+/* Responsive for Dekstop */
+
+    @media only screen and (min-width: 64em) {
+
+        nav h2 {
+            font-size: 2em;
+        }
+        nav ul li a {
+            font-size: 1.3  em;
+        }
+
+        .hamburger {
+            display: none;
+        }
+
+        nav ul {
+            display: flex;
+        }
+
+        .nav-mobile {
+            display: none;
+        }
+
+        .home {
+            position: relative;
+            width: 100%;
+            height: 50%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            /* background-color: #22afc2; */
+            margin-top: -20px;
+        }
+
+        .home .description {
+            position: relative;
+            top: 3em;
+            height: 50vh;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            padding: 100px;
+            left: -25%;
+            /* background-color: #22afc2; */
+        }
+
+        .home .description h1 {
+            margin-top: -50px;
+            font-size: 3em;
+        }
+
+        .home .description p {
+            margin-top: -30px;
+            font-size: 2em;
+        }
+
+        .home .description h1 span {
+            color: #9231dd;
+        }
+
+        .home .description .cv {
+            width: 10em;
+            padding: 10px;
+            cursor: pointer;
+            background-color: transparent;
+            color: #eaeaea;
+            outline: none;
+            box-shadow: 5px 5px #9231dd;
+            transition: .3s;
+        }
+
+        .home .description .cv:hover {
+            background-color: #9231dd;
+            box-shadow: 5px 5px #eaeaea;
+        }
+
+        .home .profile {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 45%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            opacity: 1;
+
+        }
+        .home .profile.shadow {
+            right: -100px;
+            opacity: .3;
+            z-index: -1;
+
+        }
+
+
+    }
