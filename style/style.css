@@ -206,7 +206,7 @@ nav ul li a:hover {
 
 @keyframes typewriter {
 	0% {
-		margin-left: 10%;
+		margin-left: 5%;
 	}
 	100% {
 		margin-left: 0;
@@ -232,6 +232,10 @@ nav ul li a:hover {
 	outline: none;
 	box-shadow: 5px 5px #9231dd;
 	transition: 0.3s;
+}
+
+.home .description .cv:active {
+	background-color: transparent;
 }
 
 .home .description .cv:hover {
