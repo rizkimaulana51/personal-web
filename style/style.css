@@ -26,7 +26,7 @@
 	right: 0;
 	width: 130%;
 	height: 100vh;
-	background-image: linear-gradient(to left, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+	background-image: linear-gradient(to left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
 	z-index: 1;
 }
 
@@ -198,11 +198,30 @@ nav ul li a:hover {
 }
 
 .home .description h1 span {
-	display: inline;
 	font-size: 1.2em;
 	width: 100%;
 	color: #9231dd;
+	animation: typewriter 2s infinite alternate;
 }
+
+@keyframes typewriter {
+	0% {
+		margin-left: 10%;
+	}
+	100% {
+		margin-left: 0;
+		opacity: 0;
+	}
+}
+
+/* .home .description h1 span::after {
+	content: '';
+	position: absolute;
+
+	width: 200px;
+	height: 50px;
+	background-color: #22afc2;
+} */
 
 .home .description .cv {
 	width: 10em;
