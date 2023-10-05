@@ -1,3 +1,4 @@
+// function Hamburger menu
 let funcHamburger = () => {
 	const tombolNav = document.querySelector('.hamburger');
 	const menu = document.querySelector('.bar');
@@ -11,4 +12,9 @@ let funcHamburger = () => {
 
 funcHamburger();
 
-gsap.from('.description', { duration: 3, opacity: 0, ease: 'rough' });
+// Function animation GSAP
+let gsapAnimation = () => {
+	gsap.from('.description', { duration: 3, opacity: 0, ease: 'rough' });
+};
+
+gsapAnimation();
