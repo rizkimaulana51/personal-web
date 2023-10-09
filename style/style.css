@@ -359,6 +359,10 @@ nav ul li a:hover {
     box-shadow: 5px 5px #eaeaea;
   }
 
+  .home .description p {
+    font-size: 1.5em;
+  }
+
   .home .profile {
     position: absolute;
     top: 0;
